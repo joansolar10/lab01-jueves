@@ -1,6 +1,6 @@
-FROM nginx:nginx:stable-alpine3.23-perl
+FROM nginx:stable-alpine3.23-perl
 
-COPY index.html
+COPY index.html /usr/share/nginx/html/index.html
 
 EXPOSE 80
 
