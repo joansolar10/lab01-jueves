@@ -1,12 +1,12 @@
 terraform {
   required_providers {
     docker = {
-      source  = "cybershard/docker"
-      version = "1.0.0"
+      source  = "kreuzwerker/docker"
+      version = "~> 3.0"
     }
   }
 }
 
 provider "docker" {
-  # Configuration options
+  host = "unix:///var/run/docker.sock"
 }
