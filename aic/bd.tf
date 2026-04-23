@@ -1,5 +1,5 @@
 resource "docker_container" "bd" {
-  image = "postgres:alpine"
+  image = "lab/bd"
   name  = "bd-${terraform.workspace}"
   env   = ["POSTGRES_PASSWORD=1234"]
   ports {
